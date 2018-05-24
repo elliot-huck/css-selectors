@@ -28,3 +28,19 @@ a.disabled, a .disabled {
 .active {
   color: yellow;
 }
+
+.parent > div > div:first-child {
+  color: red;
+}
+
+.parent > div > div:first-child + h4 {
+  background-color: red;
+}
+
+.parent > div > div:first-child ~ div {
+  color: blue;
+}
+
+.parent > div > div:first-child ~ div + h4 {
+  background-color: blue;
+}
